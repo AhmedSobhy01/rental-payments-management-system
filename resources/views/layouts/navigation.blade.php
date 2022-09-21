@@ -84,7 +84,7 @@
                         <a href="{{ LaravelLocalization::getLocalizedURL($locale) }}"
                             class="flex items-center px-3 py-2  {{ $locale == LaravelLocalization::getCurrentLocale() ? 'bg-indigo-600 text-white' : 'text-gray-600 hover:text-white hover:bg-indigo-600' }} -mx-2">
                             <img class="h-8 w-8 rounded-full object-cover mx-1"
-                                src="data:image/png;base64,{{ File::exists(storage_path('app/langs/' .  $locale . '.png')) ? base64_encode(file_get_contents(storage_path('app/langs/' .  $locale . '.png'))) : '' }}"
+                                src="data:image/png;base64,{{ File::exists(storage_path('imgs/langs/' .  $locale . '.png')) ? base64_encode(file_get_contents(public_path('imgs/langs/' .  $locale . '.png'))) : '' }}"
                                 alt="flag">
                             <p class="text-sm mx-2">{{ $language['native'] }}</p>
                         </a>
