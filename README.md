@@ -1,62 +1,115 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<a name="readme-top"></a>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+[![Forks][forks-shield]][forks-url]
+[![Issues][issues-shield]][issues-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-## About Laravel
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://www.github.com/AhmedSobhy01/rental-payments-management-system">
+    <img src="https://www.freepnglogos.com/uploads/logo-home-png/chimney-home-icon-transparent-1.png" alt="Logo" width="80" height="80">
+  </a>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<h3 align="center">Rental Payment Management System</h3>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+  <p align="center">
+    A replicate of the official Instagram website with the ability to post images for the web application.
+    <br />
+    <a href="https://rpms.ahmedsobhy.net">View Demo</a>
+    ·
+    <a href="https://www.github.com/AhmedSobhy01/rental-payments-management-system/issues">Report Bug</a>
+    ·
+    <a href="https://www.github.com/AhmedSobhy01/rental-payments-management-system/issues">Request Feature</a>
+  </p>
+</div>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+<!-- ABOUT THE PROJECT -->
 
-## Learning Laravel
+## About The Project
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+[![Product Name Screen Shot][product-screenshot]](https://rpms.ahmedsobhy.net)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+This is a property management system designed to assist landlords in tracking and setting payments for their tenants. It allows landlords to easily manage and record tenant payments, view payment history, and generate reports. Tenants can also access the system to view all of their dues and payments in one convenient location, ensuring transparency and accuracy in the payment process. The system is built using the Laravel framework, offering robust and scalable features to manage the entire rental process efficiently.
 
-## Laravel Sponsors
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### Built With
 
-### Premium Partners
+-   [![Laravel][laravel.com]][laravel-url]
+-   [![Vue][vue.js]][vue-url]
+-   [![tailwind][tailwind.com]][tailwind-url]
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Contributing
+<!-- Installation -->
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Installation
 
-## Code of Conduct
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+1. Clone the repo
+    ```sh
+    git clone https://www.github.com/AhmedSobhy01/rental-payments-management-system.git
+    ```
+2. Install Composer packages
+    ```sh
+    composer install
+    ```
+3. Install NPM packages
+    ```sh
+    npm install
+    ```
+4. Copy .env.example and then edit .env
+    ```sh
+    cp .env.example .env
+    ```
+5. Generate app encryption key
+    ```sh
+    php artisan key:generate
+    ```
+6. Migrate and seed the database
+    ```sh
+    php artisan migrate:fresh --seed
+    ```
 
-## Security Vulnerabilities
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+<!-- USAGE EXAMPLES -->
 
-## License
+## Usage
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+After seeding database, you can login using default user:
+| **Email** | **Password** |
+| --- | --- |
+| test@test.com | password |
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTACT -->
+
+## Contact
+
+Ahmed Sobhy - contact@ahmedsobhy.net
+
+Project Link: [https://www.github.com/AhmedSobhy01/rental-payments-management-system](https://www.github.com/AhmedSobhy01/rental-payments-management-system)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+
+[forks-shield]: https://img.shields.io/github/forks/AhmedSobhy01/rental-payments-management-system.svg?style=for-the-badge
+[forks-url]: https://github.com/AhmedSobhy01/rental-payments-management-system/network/members
+[stars-shield]: https://img.shields.io/github/stars/AhmedSobhy01/rental-payments-management-system.svg?style=for-the-badge
+[stars-url]: https://www.github.com/AhmedSobhy01/rental-payments-management-system/stargazers
+[issues-shield]: https://img.shields.io/github/issues/AhmedSobhy01/rental-payments-management-system.svg?style=for-the-badge
+[issues-url]: https://www.github.com/AhmedSobhy01/rental-payments-management-system/issues
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/ahmed-sobhy-dev
+[product-screenshot]: https://ahmedsobhy.net/storage/d1a5aae070737c5a0914dee0806b7a4a/Home.png
+[vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
+[vue-url]: https://vuejs.org/
+[laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
+[laravel-url]: https://laravel.com
+[tailwind.com]: https://img.shields.io/badge/TailwindCSS-36B7F0?style=for-the-badge&logo=tailwindcss&logoColor=white
+[tailwind-url]: https://tailwindcss.com
